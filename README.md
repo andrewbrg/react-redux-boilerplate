@@ -4,7 +4,7 @@ Boilerplate and guide for a React/Sass/Redux build.
 
 ## Getting Started
 
-If you are running a linux setup make sure your home directoryn is owned by your current user
+If you are running a linux setup make sure your home directory is belongs by your default os user
 ```
 > sudo chown -R ${whoami} /home/${whoami}
 ```
