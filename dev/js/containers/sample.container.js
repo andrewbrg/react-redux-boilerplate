@@ -9,14 +9,16 @@ class SampleContainer extends Component {
     renderList() {
         return this.props.sampleProperty.map((item) => {
             return (
-                <div onClick={() => this.props.sampleAction(item)}>{item.id}</div>
+                <div key={item.id} onClick={() => this.props.sampleAction(item)}>{item.id}</div>
             );
         });
     }
 
     render() {
         if (!this.props.sampleProperty) {
-            return (<div></div>);
+            return (
+                <div>Nothing to display</div>
+            );
         }
         return (
             <div>
