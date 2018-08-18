@@ -5,23 +5,34 @@ import {sampleAction} from "../actions";
 
 
 class SampleContainer extends Component {
+
+    renderList() {
+        return this.props.sampleProperty.map((item) => {
+            return (
+                <div onClick={() => this.props.sampleAction(item)}>{item.id}</div>
+            );
+        });
+    }
+
     render() {
-        if (!this.props.sampleStateProp) {
+        if (!this.props.sampleProperty) {
             return (<div></div>);
         }
         return (
-            <div onClick={() => this.props.sampleAction(this.props.sampleStateProp)}>{this.props.sampleStateProp.id}</div>
+            <div>
+                {this.renderList()}
+            </div>
         );
     }
 }
 
 function mapStateToProps(state) {
     return {
-        sampleStateProp: state.sample
+        sampleProperty: state.sample
     };
 }
 
-function matchDispatchToProps(dispatch){
+function matchDispatchToProps(dispatch) {
     return bindActionCreators({sampleAction: sampleAction}, dispatch);
 }
 
