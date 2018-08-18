@@ -1,10 +1,10 @@
 # React/Sass/Redux Boilerplate
 
-Boilerplate and guide for a React/Sass/Redux build.
+Boilerplate and guide for a React/Scss/Redux/Bootstrap build.
 
 ## Getting Started
 
-If you are running a linux setup make sure your home directory is belongs by your default os user
+If you are running a linux setup make sure your home directory is belongs by your default os user (assuming you are installing this project under your home directory).
 ```
 > sudo chown -R $(whoami) $HOME/
 ```
@@ -12,11 +12,6 @@ If you are running a linux setup make sure your home directory is belongs by you
 Then to get started, first install all the necessary dependencies.
 ```
 > npm install
-```
-
-Run an initial webpack build
-```
-> webpack
 ```
 
 Start the development server (changes will now update live in browser)
