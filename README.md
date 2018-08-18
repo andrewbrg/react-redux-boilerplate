@@ -21,4 +21,8 @@ Start the development server (changes will now update live in browser)
 
 To view your project, go to: [http://localhost:3000/](http://localhost:3000/)
 
+## Dev tools
+
+If you use chrome (which you should) be sure to install the Redux Dev Tools extension from [https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en](here)
+
 ![](http://i.imgur.com/DUiL9yn.png)
