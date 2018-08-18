@@ -1,7 +1,7 @@
-export const sampleAction = (user) => {
-    console.log("sampleAction was triggered: ", user.first);
+export const sampleAction = (payload) => {
+    console.log("sampleAction was triggered: ", payload);
     return {
         type: 'SAMPLE_ACTION',
-        payload: user
+        payload: payload
     }
 };

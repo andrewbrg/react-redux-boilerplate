@@ -7,10 +7,10 @@ import {sampleAction} from "../actions";
 class SampleContainer extends Component {
     render() {
         if (!this.props.sampleStateProp) {
-            return ('');
+            return (<div></div>);
         }
         return (
-            <div onClick={() => this.props.sampleAction(this.props.sampleStateProp)}>{this.props.sampleStateProp}</div>
+            <div onClick={() => this.props.sampleAction(this.props.sampleStateProp)}>{this.props.sampleStateProp.id}</div>
         );
     }
 }
@@ -25,4 +25,4 @@ function matchDispatchToProps(dispatch){
     return bindActionCreators({sampleAction: sampleAction}, dispatch);
 }
 
-export default connect(mapStateToProps)(matchDispatchToProps)(SampleContainer);
+export default connect(mapStateToProps, matchDispatchToProps)(SampleContainer);
