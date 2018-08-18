@@ -6,7 +6,7 @@ Boilerplate and guide for a React/Sass/Redux build.
 
 If you are running a linux setup make sure your home directory is belongs by your default os user
 ```
-> sudo chown -R ${whoami} /home/${whoami}
+> sudo chown -R $(whoami) $HOME/
 ```
 
 Then to get started, first install all the necessary dependencies.
